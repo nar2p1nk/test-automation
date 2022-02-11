@@ -1,5 +1,7 @@
 const sum = (a,b) =>{
-    return a + b;
+    const results = a + b;
+    return Number(results);
 }
+
 
 module.exports = sum;
