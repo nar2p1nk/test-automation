@@ -2,10 +2,11 @@
 // example:
 // if the word is "racecar" then it would turn true since "racecar" backwards is still "racecar"
 // if the word is "hill" then it would return false since "hill" backwards is "llih"
-const palindroma = word =>{
-    reversedWord = word.split('').reverse().join('')
-    if(word === reversedWord){console.log('it is a palindrome!')}
-    else{console.log('this is not a palindrome')}
+const reversedWord = word =>{
+    const reversedWord = word.split('').reverse().join('')
+    return reversedWord;
 }
 
-module.exports = palindroma
+console.log(reversedWord('PRICK'));
+
+module.exports = reversedWord;
